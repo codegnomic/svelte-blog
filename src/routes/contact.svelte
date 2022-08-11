@@ -26,3 +26,4 @@
 	<input class="border-2" type="checkbox" bind:checked={spam} />
 	<button type="submit">Send Message</button>
 </form>
+<p />
