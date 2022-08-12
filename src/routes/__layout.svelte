@@ -3,9 +3,9 @@
 	import '../app.css';
 </script>
 
-<main class="sm:flex sm:flex-row-reverse overflow-auto h-screen w-screen">
+<main class="grid sm:grid-cols-[auto_240px]">
 	<Nav />
-	<div class="h-64 grow p-4">
+	<div class="grow p-4 bg-yellow-200">
 		<slot />
 	</div>
 </main>

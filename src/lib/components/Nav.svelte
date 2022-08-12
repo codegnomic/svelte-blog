@@ -9,12 +9,12 @@
 </script>
 
 <nav
-	class="sm:w-3/12 sm:max-w-xs sm:sticky sm:top-0 bg-slate-800 sm:shrink-0 border-l-8 border-fuchsia-600"
+	class="sm:col-start-2 sm:row-start-1  sm:sticky sm:top-0 h-screen min-w-[240px] self-start  bg-slate-800  border-b-8 sm:border-b-0 sm:border-l-8 border-fuchsia-600"
 >
 	<div class="w-full text-center p-2">
 		<a href="/">🏠</a>
 	</div>
-	<div class="grid w-full h-full place-content-center text-fuchsia-300">
+	<div class="grid h-[90%] w-full place-content-center text-fuchsia-300">
 		{#each menu as navItem}
 			<NavItem {navItem} />
 		{/each}
