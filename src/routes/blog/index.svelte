@@ -1,5 +1,7 @@
-<script context="module">
-	export const load = async ({ fetch }) => {
+<script type="ts" context="module">
+	import type { Load } from '@sveltejs/kit';
+
+	export const load: Load = async ({ fetch }) => {
 		// Runs before the component is created
 		const posts = await fetch('/api/posts.json');
 		const allPosts = await posts.json();
@@ -18,7 +20,7 @@
 	export let posts;
 </script>
 
-<div class="grid sm:grid-cols-2 gap-10">
+<div class="grid sm:grid-cols-2 gap-10 max-w-xl mx-auto">
 	{#each posts as post}
 		<article class="bg-slate-400">
 			<img class="w-full h-32" src={img} alt="post pic" />
